@@ -9,13 +9,13 @@ builder.Services.AddCors(options =>
                     .AllowAnyHeader()
                     .AllowAnyMethod()
             }
-        )
+        );
     }
-)
+);
 
 var app = builder.Build();
 
-app.UseCors()
+app.UseCors();
 
 app.MapGet("/",() =>
 {
